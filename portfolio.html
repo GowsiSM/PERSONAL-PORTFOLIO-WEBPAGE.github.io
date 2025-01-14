@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Portfolio</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+          rel="stylesheet">
+     <link rel="stylesheet" href="portfolio.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+     <header>
+          <nav>
+               <a href="#about"><i class="fas fa-user"></i> About</a>
+               <a href="#interests"><i class="fas fa-heart"></i> Interests</a>
+               <a href="#projects"><i class="fas fa-briefcase"></i> Projects</a>
+               <a href="#skills"><i class="fas fa-laptop-code"></i> Skills</a>
+               <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+          </nav>
+          <nav>
+               <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/gowsi-s-m" target="_blank" class="icon-link">
+                         <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/GowsiSM" target="_blank" class="icon-link">
+                         <i class="fab fa-github" style="font-size: 20px;"></i> GitHub
+                    </a>
+               </div>
+          </nav>
+     </header>
+
+     <main>
+          <section id="about" class="about">
+               <div class="about-content">
+                    <h1><span id="typing"></span></h1>
+                    <p>Hi, Myself Gowsi, a passionate front-end developer and coding enthusiast. I enjoy designing
+                         engaging interfaces and crafting seamless user experiences.</p>
+               </div>
+               <div class="about-photo">
+                    <img src="http://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-Image.png" alt="Your Photo">
+               </div>
+          </section>
+          <div class="divider">
+          </div>
+          <section id="interests" class="interests">
+               <h2>My Interests</h2>
+               <ul>
+                    <li><i class="fas fa-code"></i> Coding</li>
+                    <li><i class="fas fa-paint-brush"></i> Front-End Development</li>
+                    <li><i class="fas fa-lightbulb"></i> Designing Creative Interfaces</li>
+               </ul>
+          </section>
+          <div class="divider">
+          </div>
+          <section id="projects" class="projects">
+               <h2>My Projects</h2>
+               <div class="project-card">
+                    <h3>Quiz Application</h3>
+                    <p>A dynamic quiz application built using HTML, CSS, and JavaScript. It features interactive
+                         questions, timer functionality, and score tracking.</p>
+                    <div class="project-links">
+                         <a href="quiz_project.mp4" target="_blank" class="btn">
+                              <i class="fas fa-play-circle"></i> Watch Video
+                         </a>
+                         <a href="https://github.com/GowsiSM/INTERACTIVE-QUIZ-APPLICATION.github.io" target="_blank"
+                              class="btn">
+                              <i class="fab fa-github"></i> GitHub Repository
+                         </a>
+                    </div>
+               </div>
+          </section>
+          <div class="divider">
+          </div>
+          <section class="skills">
+               <h2>My Skills</h2>
+               <div class="skills-list">
+                    <div class="skill-item">
+                         <i class="fas fa-code"></i>
+                         <p>HTML</p>
+                    </div>
+                    <div class="skill-item">
+                         <i class="fas fa-paint-brush"></i>
+                         <p>CSS</p>
+                    </div>
+                    <div class="skill-item">
+                         <i class="fas fa-laptop-code"></i>
+                         <p>JavaScript</p>
+                    </div>
+               </div>
+          </section>
+          <div class="divider">
+          </div>
+          <section id="contact" class="contact">
+               <h2>Contact Me</h2>
+               <form action="#" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+               </form>
+          </section>
+     </main>
+     <footer>
+          <p>Contact: 12346789 for more information</p>
+     </footer>
+
+     <!--Javascript code-->
+     <script>
+          const typing = document.getElementById('typing');
+          const text = "About Me 🌟 - Passionate Developer.";
+          let index = 0;
+
+          function typeEffect() {
+               if (index < text.length) {
+                    typing.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(typeEffect, 100);
+               }
+          }
+          typeEffect();
+     </script>
+
+</body>
+
+</html>
