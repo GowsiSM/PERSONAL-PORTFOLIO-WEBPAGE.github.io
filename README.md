@@ -29,4 +29,5 @@ The Portfolio Page is a visually engaging, responsive webpage showcasing persona
 The Portfolio Page delivers a sleek, user-friendly experience with structured content and intuitive navigation. Visitors can learn about the individual, view completed projects, check out skills, and easily get in touch via the contact form. The responsive design ensures compatibility across devices, making the portfolio an ideal tool for personal branding.
 
 Here is the visual video of the output,
+
 https://github.com/user-attachments/assets/e7e1ef2c-7622-4ebc-9b6f-96a69299d901
